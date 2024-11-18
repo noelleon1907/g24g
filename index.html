@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G24g - Kantonsschule Alpenquai Luzern</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Klasse G24g</h1>
+        <p>Kantonsschule Alpenquai Luzern</p>
+    </header>
+
+    <nav>
+        <a href="#about">Über die Klasse</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#impressum">Impressum</a>
+    </nav>
+
+    <section id="about">
+        <h2>Über die Klasse</h2>
+        <p>Die Klasse G24g ist eine engagierte Gruppe von Schülerinnen und Schülern der Kantonsschule Alpenquai Luzern, die sich durch Teamgeist und Lernfreude auszeichnet.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <section id="impressum">
+        <h2>Impressum</h2>
+        <p>Diese Website wurde erstellt für die Klasse G24g der Kantonsschule Alpenquai Luzern.</p>
+        <p>Verantwortlich für den Inhalt: <br> Klassenlehrer/in der G24g</p>
+        <p>Email: kontakt@g24g-alpenquai.ch</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 G24g, Kantonsschule Alpenquai Luzern</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
